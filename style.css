@@ -1,0 +1,295 @@
+<style>
+		    /*给body添加背景颜色*/
+		    body{background:#f1f1f1;}
+
+            /*清除默认值*/
+            *{margin:0;padding:0;}
+            a{text-decoration:none;}
+            ul{list-style:none;}
+
+            /*动态添加样式*/
+            .active{background:white;}
+
+            /*侧边导航样式*/
+            #sidenav
+            {
+            	position:fixed;
+            	top:600px;
+            	right:25px;
+            }
+            #sidenav li
+            {
+            	margin-bottom: 10px;
+            	border:1px solid #cccccc;
+            	border-radius:50%;
+            	width:20px;
+            	height:20px;
+            }
+            .active
+            {
+            	background:#cdb303;
+            }
+
+            /*给第一屏加背景图*/
+            .banner img
+            {
+            	width:100%;
+            	height:100%;
+            }
+
+            /*遮罩层样式*/
+            .wrap
+            {
+            	width:100%;
+            	height:800px;
+            	background:#000000;
+            	position:absolute;
+            	opacity: 0.5;
+            	-moz-opacity:0.5;
+            	filter:alpha(opacity=50);
+            	z-index: 100;
+            }
+
+            /*LOGO设置*/
+            .wrap h3
+            {
+            	position: absolute;
+            	left:230px;
+            	top:40px;
+            	color:#f1f1f1;
+            	font-family:Arial,Verdana,Sans-serif;
+            	font-size:30px;
+            	color:#00fff6;
+            }
+
+            /*导航*/
+            .nav
+            {
+            	position:absolute;
+            	top:50px;
+            	right:230px;
+            }
+            .nav li
+            {
+            	float:left;
+            	margin-right:40px;
+            	border:1px solid #cccccc;
+            	border-radius:10px;
+            }
+            .nav li a
+            {
+            	color: white;
+            	font-size:20px;
+            	font-family:"Times New Roman",Georgia,Serif;
+            }
+            .wrap p
+            {
+            	display:block;
+            	margin-top:270px;
+            	line-height:38px;
+            	text-align: center;
+            	color:white;
+            	font-size:40px;
+
+            }
+            .wrap h2
+            {
+            	color:#f1f1f1;
+            	text-align:center;
+            	font-size: 60px;
+            	line-height:127px;
+            }
+            .btn
+            {
+            	width:245px;
+            	height:65px;
+            	border:1px solid #000000;
+            	border-radius:10px;
+            	background:#fed136;
+            	color:#ffffff;
+            	font-size:30px;
+            	margin-left:40%;
+            	margin-top:40px;
+            }
+            .box
+            {
+            	margin-top:40px;
+            }
+            .box
+            {
+            	margin-top:140px;
+            }
+            .box h2
+            {
+            	
+            	font-size:40px;
+            	text-align:center;
+            	display:block;
+            }
+            .box2
+            {
+            	margin-top:140px;
+            }	
+            .box2 h2
+            {
+            	margin-top:180px;
+            	text-align:center;
+            	font-size:40px;
+            }
+            .box2 h4
+            {
+            	text-align: center;
+            	line-height:80px;
+            	font-size:30px
+            }
+            /*about me*/
+            .loop1
+            {
+            	width:1140px;
+            	height:auto;
+            	margin:0 auto;
+            }
+            /*mask遮罩层*/
+            .mask
+            {
+            	width:1140px;
+            	height:500px;
+            	background:#cccccc;
+            	opacity:0.7;
+            	-moz-opacity:0.7;
+            	-webkit-opacity:0.7;
+            	-o-opacity:0.7;
+            	filter:alpha(opacity=70);
+            	position:absolute;
+            	z-index:100;
+            }
+            .loop1 img
+            {
+            	width:350px;
+            	height:500px;
+            	margin-left:20px;
+            	z-index:99;
+            }
+            /*变化的小框*/
+            .mask:hover
+            {
+                animation: opa 2s ease;
+                -moz-animation: opa 2s ease;
+                -webkit-animation: opa 2s ease;
+                -o-animation: opa 2s ease;
+            }
+            @keyframes opa
+            {
+            	0%{opacity:0.7}
+            	50%{opacity:0.5}
+            	100%{opacity:0}
+            }
+             -webkit-@keyframes opa
+            {
+            	0%{opacity:0.7}
+            	50%{opacity:0.5}
+            	100%{opacity:0}
+            }
+             -moz-@keyframes opa
+            {
+            	0%{opacity:0.7}
+            	50%{opacity:0.5}
+            	100%{opacity:0}
+            }
+             -o-@keyframes opa
+            {
+            	0%{opacity:0.7}
+            	50%{opacity:0.5}
+            	100%{opacity:0}
+            }
+            .block
+            {
+            	width:1140px;
+            	height:500px;
+            	border:5px solid #3ce4f4;
+            	position:absolute;
+            	z-index:101;
+            	transition:2s;
+
+            }
+            .block:hover
+            {
+               animation:2s rotat ease;
+            }
+            @keyframes rotat
+            {
+            	0%{transform:rotate(90deg);}
+            	50%{transform:rotate(180deg);}
+            	100%{transform:rotate(360deg);}
+            }
+            /*个人技能*/
+            .skill
+            {
+            	width:1140px;
+            	height:auto;
+            	margin:0 auto;
+            }
+            .skill h4
+            {
+               line-height:80px;
+            }
+            .skill ul
+            {
+            	height:400px;
+            	position: relative;
+            }
+            .skill ul li
+            {
+            	width:300px;
+            	height:400px;
+            	border:1px solid #cccccc;
+            	float:left;
+            	margin-left:60px;
+            	margin-top:20px;
+            }
+            .skill li .div-top
+            {
+               position:absolute;
+               width:300px;
+               height:50px;
+               background:#cccccc;
+            }
+            .skill li .div-top .glyphicon
+            {
+            	font-size:40px;
+            	color:red;
+            }
+            .skill li .div-top span
+            {
+            	color:#ffffff;
+            	font-size:20px;
+            }
+            .skill li .div-top p
+            {
+            	text-align:center;
+            	font-size:20px;
+            	font-weight:bolder;
+            	color:#cccccc;
+            	line-height:40px;
+            }
+            /*第四屏*/
+            .conact
+            {
+               width:1140px;
+               height:auto;
+               margin:0 auto;
+               position:relative;
+            }
+            /*标题下面的红线*/
+            .conact span
+            {
+            	width:310px;
+            	height:1px;
+            	background:red;
+            	box-shadow:1px 1px 1px rgba(160,160,160,0.5);
+            	display:block;
+            	position:absolute;
+            	left:415px;
+                top:60px;
+            }
+		</style>
